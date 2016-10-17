@@ -1,6 +1,6 @@
 { 
 	"name":        "kingsgate-alexa-skill", 
-	"version":     "0.2", 
+	"version":     "0.2.0", 
 	"description": "Amazon Alexa Skill for Kingsgate Church",
 	"keywords":    ["kingsgate", "church", "alexa", "sermon", "podcast"], 
 	"homepage":    "https://github.com/jonburney/KingsgateMediaPlayer-AmazonAlexa", 
