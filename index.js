@@ -35,7 +35,9 @@ function getLatestSermon(self, controller) {
     	var lastArticle = articles[lastArticleIndex];
     	var mediaUrl = lastArticle.enclosure.replace("http://", "https://");
 
-    	console.log("author: " + lastArticle.author + "\nTitle: " + lastArticle.title + "\nURL: " + mediaUrl);
+        var articleTitle = lastArticle.title.replace("& ", "&amp; ");
+
+    	console.log("author: " + lastArticle.author + "\nTitle: " + articleTitle + "\nURL: " + mediaUrl);
 
         self.attributes["articleCount"] = articles.length;
     	self.attributes['playOrder'] = 0
@@ -45,7 +47,7 @@ function getLatestSermon(self, controller) {
     	self.attributes['shuffle'] = false;
     	self.attributes['playbackIndexChanged'] = true;
     	self.attributes['audioStream'] = {
-    		title: lastArticle.author + " " + lastArticle.title,
+    		title: lastArticle.author + " " + articleTitle,
     		url: mediaUrl
     	};
     	self.handler.state = '';
