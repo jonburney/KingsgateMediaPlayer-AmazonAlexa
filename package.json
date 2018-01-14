@@ -1,40 +1,42 @@
-{ 
-	"name":        "kingsgate-alexa-skill", 
-	"version":     "0.2.0", 
+{
+	"name": "kingsgate-alexa-skill",
+	"version": "0.2.0",
 	"description": "Amazon Alexa Skill for Kingsgate Church",
-	"keywords":    ["kingsgate", "church", "alexa", "sermon", "podcast"], 
-	"homepage":    "https://github.com/jonburney/KingsgateMediaPlayer-AmazonAlexa", 
-	"bugs": { 
-		"url":  "https://github.com/jonburney/KingsgateMediaPlayer-AmazonAlexa/issues"
-	}, 
-	"author": { 
-		"name": "Jon Burney", 
-		"url":  "http://www.version7.co.uk"
-	}, 
-	"main": "./index", 
-	"scripts": { 
+	"keywords": [
+		"kingsgate",
+		"church",
+		"alexa",
+		"sermon",
+		"podcast"
+	],
+	"homepage": "https://github.com/jonburney/KingsgateMediaPlayer-AmazonAlexa",
+	"bugs": {
+		"url": "https://github.com/jonburney/KingsgateMediaPlayer-AmazonAlexa/issues"
+	},
+	"author": {
+		"name": "Jon Burney",
+		"url": "http://www.version7.co.uk"
+	},
+	"main": "./index",
+	"scripts": {
 		"test": "mocha"
-	}, 
-	
-	"repository": { 
-		"type": "git", 
-		"url":  "https://github.com/jonburney/KingsgateMediaPlayer-AmazonAlexa.git"
-	}, 
-	
-	"dependencies": { 
-		"request":    "2.x.x", 
-		"sax":        "1.x.x", 
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jonburney/KingsgateMediaPlayer-AmazonAlexa.git"
+	},
+	"dependencies": {
+		"request": "2.x.x",
+		"sax": "1.x.x",
 		"underscore": "1.x.x",
-		"alexa-sdk":  "1.0.6"
-	}, 
-	
-	"devDependencies": { 
-		"should":  "0.x.x", 
-		"mocha":   "0.x.x", 
+		"alexa-sdk": "1.0.6"
+	},
+	"devDependencies": {
+		"should": "0.x.x",
+		"mocha": "0.x.x",
 		"connect": "1.x.x"
-	}, 
-	
-	"engines": { 
-		"node": ">=4.3.0" 
+	},
+	"engines": {
+		"node": ">=4.3.0"
 	}
 }
