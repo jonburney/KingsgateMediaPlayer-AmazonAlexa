@@ -18,9 +18,9 @@
  */
  'use strict';
 
-var feed = require("feed-read");
+var feed = require("./feed-read");
 var Alexa = require("alexa-sdk");
-var controller = require("controller");
+var controller = require("./controller");
 
 
 function getLatestSermon(self, controller) {
@@ -28,10 +28,15 @@ function getLatestSermon(self, controller) {
 	
 	self.attributes['playOrder'] = 0
 	
-
     feed(rssPath, function (error, articles) {
+
+		if (error) {
+			console.log("Error loading RSS feed");
+			return;
+		}
+
 		var lastArticle = articles[articles.length-1];
-		var mediaUrl = lastArticle.enclosure.replace("http://", "https://");
+		var mediaUrl = lastArticle.enclosure.url.replace("http://", "https://");
 
 		console.log("author: " + lastArticle.author + "\nTitle: " + lastArticle.title + "\nURL: " + mediaUrl);
 
@@ -42,7 +47,7 @@ function getLatestSermon(self, controller) {
 		self.attributes['shuffle'] = false;
 		self.attributes['playbackIndexChanged'] = true;
 		self.attributes['audioStream'] = {
-			title: lastArticle.author + " " + lastArticle.title,
+			title: lastArticle.title.replace(" & ", " &amp; ") + " by " + lastArticle.author,
 			url: mediaUrl
 		};
 		self.handler.state = '';
