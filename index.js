@@ -47,7 +47,7 @@ function getLatestSermon(self, controller) {
 		self.attributes['shuffle'] = false;
 		self.attributes['playbackIndexChanged'] = true;
 		self.attributes['audioStream'] = {
-			title: lastArticle.title + " by " + lastArticle.author,
+			title: lastArticle.title.replace(" & ", " &amp; ") + " by " + lastArticle.author,
 			url: mediaUrl
 		};
 		self.handler.state = '';
