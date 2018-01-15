@@ -17,29 +17,62 @@
  *
  */
  
- 'use strict';
+'use strict';
+
+var constants = require("./constants");
+var feed = require("./feed-read");
 
 var controller = function() {
 	
 	return {
 		play: function() {
-			this.handler.state = "_PLAY_MODE";
+			this.handler.state = constants.states.PLAY_MODE;
 			
-			console.log("Checking state = " + this.handler.state);
-			
-			var token = this.attributes["audioStream"].title;
 			var playBehavior = 'REPLACE_ALL';
-			var offsetInMilliseconds = this.attributes['offsetInMilliseconds'];
-			this.attributes['playbackIndexChanged'] = true;
+
+			this.attributes['playOrder'] = 0
+		
+			var self = this;
+
+            feed(constants.rssFeedUrl, function (error, articles) {
+		
+                if (error) {
+                    console.log("Error loading RSS feed");
+                    return;
+                }
+        
+				var targetIndex = articles.length - (1 + self.attributes['index']);
+				var lastArticle = articles[targetIndex];
+				
+				console.log("Loading podcast entry: " + targetIndex);
+                var mediaUrl = lastArticle.enclosure.url.replace("http://", "https://");
+        
+                console.log("author: " + lastArticle.author + "\nTitle: " + lastArticle.title + "\nURL: " + mediaUrl);
+        
+                self.attributes['playOrder'] = 0
+                
+                self.attributes['offsetInMilliseconds'] = 0;
+                self.attributes['loop'] = true;
+                self.attributes['shuffle'] = false;
+                self.attributes['playbackIndexChanged'] = true;
+                self.attributes['audioStream'] = {
+                    title: lastArticle.title.replace(" & ", " &amp; ") + " by " + lastArticle.author,
+                    url: mediaUrl
+                };
+                
+                var token = self.attributes["audioStream"].title;
 			
-			if (canThrowCard.call(this)) {
-                var cardTitle = 'Playing ' + this.attributes["audioStream"].title;
-                var cardContent = 'Playing ' + this.attributes["audioStream"].title;
-                this.response.cardRenderer(cardTitle, cardContent, null);
-			}
+				var offsetInMilliseconds = self.attributes['offsetInMilliseconds'];
 			
-			this.response.speak(cardTitle).audioPlayerPlay(playBehavior, this.attributes["audioStream"].url, token, null, offsetInMilliseconds);
-			this.emit(':responseReady');
+				if (canThrowCard.call(self)) {
+					var cardTitle = 'Playing ' + self.attributes["audioStream"].title;
+					var cardContent = 'Playing ' + self.attributes["audioStream"].title;
+					self.response.cardRenderer(cardTitle, cardContent, null);
+				}
+				console.log("====== Starting Playback ======");
+				self.response.speak(cardTitle).audioPlayerPlay(playBehavior, self.attributes["audioStream"].url, token, null, offsetInMilliseconds);
+				self.emit(':responseReady');
+            });   			
 		},
 		
 		stop: function() {
@@ -48,9 +81,11 @@ var controller = function() {
 		},
 		
 		playNext: function() {
-			var message = 'Playing the next sermon is not supported yet';
-			this.response.speak(message);
-			this.emit(':responseReady');
+			this.attributes['index'] += 1;
+            this.attributes['offsetInMilliseconds'] = 0;
+            this.attributes['playbackIndexChanged'] = true;
+
+            controller.play.call(this);
 		},
 		
 		playPrevious: function() {
