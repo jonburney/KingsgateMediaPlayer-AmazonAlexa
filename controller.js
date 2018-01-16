@@ -29,9 +29,6 @@ var controller = function() {
 			this.handler.state = constants.states.PLAY_MODE;
 			
 			var playBehavior = 'REPLACE_ALL';
-
-			this.attributes['playOrder'] = 0
-		
 			var self = this;
 
             feed(constants.rssFeedUrl, function (error, articles) {
@@ -40,20 +37,25 @@ var controller = function() {
                     console.log("Error loading RSS feed");
                     return;
                 }
-        
-				var targetIndex = articles.length - (1 + self.attributes['index']);
-				var lastArticle = articles[targetIndex];
+		
+				console.log("Play queue = " + self.attributes['playQueue']);
+				console.log("Stream count = " + articles.length);
+				self.attributes['streamCount'] = articles.length;
+				self.attributes['maxIndex'] = articles.length - 1;
+
+				if (self.attributes['index'] == 0) {
+					self.attributes['index'] = (articles.length - 1);
+				}
+
+				var lastArticle = articles[self.attributes['index']];
 				
-				console.log("Loading podcast entry: " + targetIndex);
+				console.log("Loading podcast entry: " + self.attributes['index']);
                 var mediaUrl = lastArticle.enclosure.url.replace("http://", "https://");
         
                 console.log("author: " + lastArticle.author + "\nTitle: " + lastArticle.title + "\nURL: " + mediaUrl);
-        
-                self.attributes['playOrder'] = 0
                 
                 self.attributes['offsetInMilliseconds'] = 0;
-                self.attributes['loop'] = true;
-                self.attributes['shuffle'] = false;
+                self.attributes['loop'] = true;                
                 self.attributes['playbackIndexChanged'] = true;
                 self.attributes['audioStream'] = {
                     title: lastArticle.title.replace(" & ", " &amp; ") + " by " + lastArticle.author,
@@ -81,27 +83,57 @@ var controller = function() {
 		},
 		
 		playNext: function() {
-			this.attributes['index'] += 1;
-            this.attributes['offsetInMilliseconds'] = 0;
-            this.attributes['playbackIndexChanged'] = true;
 
-            controller.play.call(this);
+			var maxIndex = this.attributes['maxIndex'];
+
+			if (this.attributes['shuffle']) {
+				this.attributes['index'] = Math.floor(Math.random() * Math.floor(maxIndex));
+				this.attributes['offsetInMilliseconds'] = 0;
+				this.attributes['playbackIndexChanged'] = true;
+				
+				if (!this.attributes['playQueue']) {
+					this.attributes['playQueue'] = [];
+				}
+				
+				this.attributes['playQueue'].push(this.attributes['index']);
+				controller.play.call(this);
+			} else if (this.attributes['index'] == maxIndex) {
+				var message = 'This is the latest sermon. You can say "Alexa, go back" to listen to a previous sermon';
+				this.response.speak(message);
+				this.emit(':responseReady');
+			} else {
+				this.attributes['index'] += 1;
+				this.attributes['offsetInMilliseconds'] = 0;
+				this.attributes['playbackIndexChanged'] = true;
+				controller.play.call(this);
+			}
 		},
 		
 		playPrevious: function() {
-			var message = 'Playing the previous sermon is not supported yet';
-			this.response.speak(message);
-			this.emit(':responseReady');
+
+			if (this.attributes['shuffle'] && this.attributes['playQueue'] && this.attributes['playQueue'].length > 0) {
+				this.attributes['index'] = this.attributes['playQueue'].pop();
+			} else {
+				this.attributes['index'] -= 1;
+			}
+
+			
+			this.attributes['offsetInMilliseconds'] = 0;
+			this.attributes['playbackIndexChanged'] = true;
+			controller.play.call(this);
 		},
 		
 		shuffleOn: function() {
-			var message = 'Shuffle is not suported yet';
+			this.attributes['shuffle'] = true;
+			var message = 'Enabling shuffle mode';
 			this.response.speak(message);
 			this.emit(':responseReady');
 		},
 		
 		shuffleOff: function() {
-			var message = 'Shuffle is not suported yet';
+			this.attributes['shuffle'] = false;
+			this.attributes['playQueue'] = [];
+			var message = 'Disabling shuffle mode';
 			this.response.speak(message);
 			this.emit(':responseReady');
 		},

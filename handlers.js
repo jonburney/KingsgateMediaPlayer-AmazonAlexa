@@ -35,12 +35,12 @@ var stateHandlers = {
 		},
 		
 		'LaunchRequest' : function () {
-            this.attributes['playOrder'] = Array.apply(null, {length: audioData.length}).map(Number.call, Number);
             this.attributes['index'] = 0;
             this.attributes['offsetInMilliseconds'] = 0;
             this.attributes['loop'] = true;
             this.attributes['shuffle'] = false;
             this.attributes['playbackIndexChanged'] = true;
+            this.attributes['playQueue'] = [];
             this.handler.state = constants.states.START_MODE;
 
             var message = 'Welcome to the Kingsgate Community Church sermon player. You can say, play the latest sermon to listen to the latest sermon.';
