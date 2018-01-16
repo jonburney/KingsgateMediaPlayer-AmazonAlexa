@@ -17,29 +17,64 @@
  *
  */
  
- 'use strict';
+'use strict';
+
+var constants = require("./constants");
+var feed = require("./feed-read");
 
 var controller = function() {
 	
 	return {
 		play: function() {
-			this.handler.state = "_PLAY_MODE";
+			this.handler.state = constants.states.PLAY_MODE;
 			
-			console.log("Checking state = " + this.handler.state);
-			
-			var token = this.attributes["audioStream"].title;
 			var playBehavior = 'REPLACE_ALL';
-			var offsetInMilliseconds = this.attributes['offsetInMilliseconds'];
-			this.attributes['playbackIndexChanged'] = true;
+			var self = this;
+
+            feed(constants.rssFeedUrl, function (error, articles) {
+		
+                if (error) {
+                    console.log("Error loading RSS feed");
+                    return;
+                }
+		
+				console.log("Play queue = " + self.attributes['playQueue']);
+				console.log("Stream count = " + articles.length);
+				self.attributes['streamCount'] = articles.length;
+				self.attributes['maxIndex'] = articles.length - 1;
+
+				if (self.attributes['index'] == 0) {
+					self.attributes['index'] = (articles.length - 1);
+				}
+
+				var lastArticle = articles[self.attributes['index']];
+				
+				console.log("Loading podcast entry: " + self.attributes['index']);
+                var mediaUrl = lastArticle.enclosure.url.replace("http://", "https://");
+        
+                console.log("author: " + lastArticle.author + "\nTitle: " + lastArticle.title + "\nURL: " + mediaUrl);
+                
+                self.attributes['offsetInMilliseconds'] = 0;
+                self.attributes['loop'] = true;                
+                self.attributes['playbackIndexChanged'] = true;
+                self.attributes['audioStream'] = {
+                    title: lastArticle.title.replace(" & ", " &amp; ") + " by " + lastArticle.author,
+                    url: mediaUrl
+                };
+                
+                var token = self.attributes["audioStream"].title;
 			
-			if (canThrowCard.call(this)) {
-                var cardTitle = 'Playing ' + this.attributes["audioStream"].title;
-                var cardContent = 'Playing ' + this.attributes["audioStream"].title;
-                this.response.cardRenderer(cardTitle, cardContent, null);
-			}
+				var offsetInMilliseconds = self.attributes['offsetInMilliseconds'];
 			
-			this.response.speak(cardTitle).audioPlayerPlay(playBehavior, this.attributes["audioStream"].url, token, null, offsetInMilliseconds);
-			this.emit(':responseReady');
+				if (canThrowCard.call(self)) {
+					var cardTitle = 'Playing ' + self.attributes["audioStream"].title;
+					var cardContent = 'Playing ' + self.attributes["audioStream"].title;
+					self.response.cardRenderer(cardTitle, cardContent, null);
+				}
+				console.log("====== Starting Playback ======");
+				self.response.speak(cardTitle).audioPlayerPlay(playBehavior, self.attributes["audioStream"].url, token, null, offsetInMilliseconds);
+				self.emit(':responseReady');
+            });   			
 		},
 		
 		stop: function() {
@@ -48,25 +83,57 @@ var controller = function() {
 		},
 		
 		playNext: function() {
-			var message = 'Playing the next sermon is not supported yet';
-			this.response.speak(message);
-			this.emit(':responseReady');
+
+			var maxIndex = this.attributes['maxIndex'];
+
+			if (this.attributes['shuffle']) {
+				this.attributes['index'] = Math.floor(Math.random() * Math.floor(maxIndex));
+				this.attributes['offsetInMilliseconds'] = 0;
+				this.attributes['playbackIndexChanged'] = true;
+				
+				if (!this.attributes['playQueue']) {
+					this.attributes['playQueue'] = [];
+				}
+				
+				this.attributes['playQueue'].push(this.attributes['index']);
+				controller.play.call(this);
+			} else if (this.attributes['index'] == maxIndex) {
+				var message = 'This is the latest sermon. You can say "Alexa, go back" to listen to a previous sermon';
+				this.response.speak(message);
+				this.emit(':responseReady');
+			} else {
+				this.attributes['index'] += 1;
+				this.attributes['offsetInMilliseconds'] = 0;
+				this.attributes['playbackIndexChanged'] = true;
+				controller.play.call(this);
+			}
 		},
 		
 		playPrevious: function() {
-			var message = 'Playing the previous sermon is not supported yet';
-			this.response.speak(message);
-			this.emit(':responseReady');
+
+			if (this.attributes['shuffle'] && this.attributes['playQueue'] && this.attributes['playQueue'].length > 0) {
+				this.attributes['index'] = this.attributes['playQueue'].pop();
+			} else {
+				this.attributes['index'] -= 1;
+			}
+
+			
+			this.attributes['offsetInMilliseconds'] = 0;
+			this.attributes['playbackIndexChanged'] = true;
+			controller.play.call(this);
 		},
 		
 		shuffleOn: function() {
-			var message = 'Shuffle is not suported yet';
+			this.attributes['shuffle'] = true;
+			var message = 'Enabling shuffle mode';
 			this.response.speak(message);
 			this.emit(':responseReady');
 		},
 		
 		shuffleOff: function() {
-			var message = 'Shuffle is not suported yet';
+			this.attributes['shuffle'] = false;
+			this.attributes['playQueue'] = [];
+			var message = 'Disabling shuffle mode';
 			this.response.speak(message);
 			this.emit(':responseReady');
 		},

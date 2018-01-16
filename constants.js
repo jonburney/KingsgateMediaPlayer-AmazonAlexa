@@ -16,21 +16,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
- 'use strict';
+ 
+'use strict';
 
-var Alexa = require("alexa-sdk");
-var handlers = require("./handlers");
-var constants = require("./constants");
+module.exports = Object.freeze({
 
-exports.handler = (event, context, callback) => {
-	
-	var alexa = Alexa.handler(event, context);
-	alexa.appId = constants.appId;
-	alexa.dynamoDBTableName = constants.dynamoDbTable;
-	alexa.registerHandlers(
-		handlers.startModeIntentHandlers
-		, handlers.playModeIntentHandlers
-	);
-	alexa.execute();
-};
-
+    appId: "amzn1.ask.skill.74c0e160-0e95-48f8-936b-f6134db15077",
+    dynamoDbTable: "AlexaKingsgateSkillTable",
+    rssFeedUrl: "http://www.kingsgateuk.com/Media/rss.xml",
+    states: {
+        START_MODE: '',
+        PLAY_MODE: '_PLAY_MODE',
+        RESUME_DECISION_MODE : '_RESUME_DECISION_MODE'
+    }
+});
