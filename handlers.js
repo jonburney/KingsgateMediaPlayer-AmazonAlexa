@@ -67,58 +67,74 @@ var stateHandlers = {
 			this.emit(":responseReady");
 		},
 		'PlayLatestSermon' : function () {
+			console.log("Called - PlayLatestSermon");
             this.attributes['index'] = 0;
 			controller.play.call(this);
 		},
 		'SermonInfoIntent' : function() {
-			var message = "Currently playing " + this.attributes['audioStream'].title + " from Kingsgate Community Church";
-			this.response.speak(message).listen(message);
-			this.emit(":responseReady");
+			console.log("Called - SermonInfoIntent");
+			var currentlyPlaying = this.attributes['audioStream'];
+			var message = "This is " + currentlyPlaying.title + " from " + currentlyPlaying.publishDate;
+			this.emit(":tell", message);
 		},
 		'PlaybackStarted' : function () {
+			console.log("Called - PlaybackStarted");
 			this.attributes['playbackFinished'] = false;
 			this.emit(':saveState', true);
 		},
 		'PlaybackFinished' : function () {
+			console.log("Called - PlaybackFinished");
 			this.attributes['playbackFinished'] = true;
 			this.attributes['enqueuedToken'] = false;
 			this.emit(':saveState', true);
 		},
-		'PlaybackStopped' : function () {        
+		'PlaybackStopped' : function () {       
+			console.log("Called - PlaybackStopped"); 
 			this.attributes['offsetInMilliseconds'] = this.event.request.offsetInMilliseconds;
 			this.emit(':saveState', true);
 		},
 		'AMAZON.NextIntent' : function () { 
+			console.log("Called - AMAZON.NextIntent"); 
 			controller.playNext.call(this) 
 		},
         'AMAZON.PreviousIntent' : function () { 
+			console.log("Called - AMAZON.PreviousIntent"); 
 			controller.playPrevious.call(this) 
 		},
         'AMAZON.PauseIntent' : function () { 
+			console.log("Called - AMAZON.PauseIntent"); 
 			controller.stop.call(this) 
 		},
         'AMAZON.StopIntent' : function () { 
+			console.log("Called - AMAZON.StopIntent"); 
 			controller.stop.call(this) 
 		},
         'AMAZON.CancelIntent' : function () { 
+			console.log("Called - AMAZON.CancelIntent"); 
 			controller.stop.call(this) 
 		},
         'AMAZON.ResumeIntent' : function () { 
+			console.log("Called - AMAZON.ResumeIntent"); 
 			controller.play.call(this) 
 		},
         'AMAZON.LoopOnIntent' : function () { 
+			console.log("Called - AMAZON.LoopOnIntent"); 
 			controller.loopOn.call(this) 
 		},
         'AMAZON.LoopOffIntent' : function () { 
+			console.log("Called - AMAZON.LoopOffIntent"); 
 			controller.loopOff.call(this) 
 		},
         'AMAZON.ShuffleOnIntent' : function () { 
+			console.log("Called - AMAZON.ShuffleOnIntent"); 
 			controller.shuffleOn.call(this) 
 		},
         'AMAZON.ShuffleOffIntent' : function () { 
+			console.log("Called - AMAZON.ShuffleOffIntent"); 
 			controller.shuffleOff.call(this) 
 		},
 		'AMAZON.StartOverIntent' : function () { 
+			console.log("Called - AMAZON.StartOverIntent"); 
 			controller.restart.call(this) 
 		}
 	})
