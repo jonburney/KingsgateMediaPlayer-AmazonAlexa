@@ -21,6 +21,7 @@
 
 var constants = require("./constants");
 var feed = require("./feed-read");
+var dateFormat = require("dateformat");
 
 var controller = function() {
 	
@@ -47,8 +48,10 @@ var controller = function() {
 					self.attributes['index'] = (articles.length - 1);
 				}
 
-				var lastArticle = articles[self.attributes['index']];
 				
+
+				var lastArticle = articles[self.attributes['index']];
+
 				console.log("Loading podcast entry: " + self.attributes['index']);
                 var mediaUrl = lastArticle.enclosure.url.replace("http://", "https://");
         
@@ -59,7 +62,8 @@ var controller = function() {
                 self.attributes['playbackIndexChanged'] = true;
                 self.attributes['audioStream'] = {
                     title: lastArticle.title.replace(" & ", " &amp; ") + " by " + lastArticle.author,
-                    url: mediaUrl
+					url: mediaUrl,
+					publishDate: dateFormat(Date.parse(lastArticle.published), "dddd, mmmm dS, yyyy")
                 };
                 
                 var token = self.attributes["audioStream"].title;

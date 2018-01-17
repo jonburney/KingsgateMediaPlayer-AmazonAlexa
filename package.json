@@ -26,10 +26,11 @@
 		"url": "https://github.com/jonburney/KingsgateMediaPlayer-AmazonAlexa.git"
 	},
 	"dependencies": {
+		"alexa-sdk": "1.0.6",
+		"dateformat": "^3.0.2",
 		"request": "2.x.x",
 		"sax": "1.x.x",
-		"underscore": "1.x.x",
-		"alexa-sdk": "1.0.6"
+		"underscore": "1.x.x"
 	},
 	"devDependencies": {
 		"should": "0.x.x",
