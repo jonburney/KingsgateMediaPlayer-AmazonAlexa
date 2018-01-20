@@ -19,9 +19,10 @@
  
 'use strict';
 
-var constants = require("./constants");
-var feed = require("./feed-read");
+var constants  = require("./constants");
+var feed 	   = require("./feed-read");
 var dateFormat = require("dateformat");
+var logger     = require('./logger');
 
 var controller = function() {
 	
@@ -32,12 +33,16 @@ var controller = function() {
 			var playBehavior = 'REPLACE_ALL';
 			var self = this;
 
-            feed(constants.rssFeedUrl, function (error, articles) {
+            feed(constants.rssFeedUrl, function (error, articles, processingStartTime) {
 		
                 if (error) {
-                    console.log("Error loading RSS feed");
+					logger.error("RssFeedError");
+                    console.log("Error loading RSS feed", error);
                     return;
-                }
+				}
+				
+				var processingElapsedTime = Date.now() - processingStartTime;
+    			logger.timer('FeedProcessingTime', processingElapsedTime);
 		
 				console.log("Play queue = " + self.attributes['playQueue']);
 				console.log("Stream count = " + articles.length);

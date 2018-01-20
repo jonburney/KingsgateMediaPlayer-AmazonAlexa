@@ -18,23 +18,29 @@
  */
 'use strict';
 
-var Alexa = require("alexa-sdk");
+var Alexa 	   = require("alexa-sdk");
 var controller = require("./controller");
-var constants = require('./constants');
+var constants  = require('./constants');
+var logger     = require('./logger');
 
 var stateHandlers = {
 	
 	startModeIntentHandlers : Alexa.CreateStateHandler(constants.states.START_MODE, {
 		
 		'Unhandled': function() {
+			logger.increment("Unhandled (" + constants.states.START_MODE + ")");
+			logger.increment("Unhandled");
+
 			console.log("Unable to map to intent via startModeIntentHandlers. Handler state = " + this.handler.state);
-			
 			var message = "Sorry, I didn't understand your request. Please say, play the latest sermon to listen to the latest sermon.";
 			this.response.speak(message).listen(message);
 			this.emit(":responseReady");
 		},
 		
 		'LaunchRequest' : function () {
+			logger.increment("LaunchRequest (" + constants.states.START_MODE + ")");
+			logger.increment("LaunchRequest");
+
             this.attributes['index'] = 0;
             this.attributes['offsetInMilliseconds'] = 0;
             this.attributes['loop'] = true;
@@ -51,6 +57,9 @@ var stateHandlers = {
 		},
 		
 		'PlayLatestSermon' : function () {
+			logger.increment("PlayLatestSermon (" + constants.states.START_MODE + ")");
+			logger.increment("PlayLatestSermon");
+
             this.attributes['index'] = 0;
             this.handler.state = constants.states.START_MODE;
 			controller.play.call(this);
@@ -60,6 +69,9 @@ var stateHandlers = {
 	
 	playModeIntentHandlers : Alexa.CreateStateHandler(constants.states.PLAY_MODE, {
 		'Unhandled': function() {
+			logger.increment("Unhandled (" + constants.states.PLAY_MODE + ")");
+			logger.increment("Unhandled");
+
 			console.log("Unable to map to intent via playModeIntentHandlers. Handler state = " + this.handler.state);
 			
 			var message = "Sorry, I didn't understand your request. Please say, play the latest sermon to listen to the latest sermon.";
@@ -67,75 +79,107 @@ var stateHandlers = {
 			this.emit(":responseReady");
 		},
 		'PlayLatestSermon' : function () {
-			console.log("Called - PlayLatestSermon");
+			logger.increment("PlayLatestSermon (" + constants.states.PLAY_MODE + ")");
+			logger.increment("PlayLatestSermon");
+
             this.attributes['index'] = 0;
 			controller.play.call(this);
 		},
 		'SermonInfoIntent' : function() {
-			console.log("Called - SermonInfoIntent");
+			logger.increment("SermonInfoIntent (" + constants.states.PLAY_MODE + ")");
+			logger.increment("SermonInfoIntent");
+
 			var currentlyPlaying = this.attributes['audioStream'];
 			var message = "This is " + currentlyPlaying.title + " from " + currentlyPlaying.publishDate;
 			this.emit(":tell", message);
 		},
 		'PlaybackStarted' : function () {
-			console.log("Called - PlaybackStarted");
+			logger.increment("PlaybackStarted (" + constants.states.PLAY_MODE + ")");
+			logger.increment("PlaybackStarted");
+
 			this.attributes['playbackFinished'] = false;
 			this.emit(':saveState', true);
 		},
 		'PlaybackFinished' : function () {
-			console.log("Called - PlaybackFinished");
+			logger.increment("PlaybackFinished (" + constants.states.PLAY_MODE + ")");
+			logger.increment("PlaybackFinished");
+
 			this.attributes['playbackFinished'] = true;
 			this.attributes['enqueuedToken'] = false;
 			this.emit(':saveState', true);
 		},
-		'PlaybackStopped' : function () {       
-			console.log("Called - PlaybackStopped"); 
+		'PlaybackStopped' : function () {      
+			logger.increment("PlaybackStopped (" + constants.states.PLAY_MODE + ")");
+			logger.increment("PlaybackStopped");
+
 			this.attributes['offsetInMilliseconds'] = this.event.request.offsetInMilliseconds;
 			this.emit(':saveState', true);
 		},
 		'AMAZON.NextIntent' : function () { 
-			console.log("Called - AMAZON.NextIntent"); 
+			logger.increment("AMAZON.NextIntent" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.NextIntent");
+
 			controller.playNext.call(this) 
 		},
         'AMAZON.PreviousIntent' : function () { 
-			console.log("Called - AMAZON.PreviousIntent"); 
+			logger.increment("AMAZON.PreviousIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.PreviousIntent");
+
 			controller.playPrevious.call(this) 
 		},
         'AMAZON.PauseIntent' : function () { 
-			console.log("Called - AMAZON.PauseIntent"); 
+			logger.increment("AMAZON.PauseIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.PauseIntent");
+
 			controller.stop.call(this) 
 		},
         'AMAZON.StopIntent' : function () { 
-			console.log("Called - AMAZON.StopIntent"); 
+			logger.increment("AMAZON.StopIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.StopIntent");
+
 			controller.stop.call(this) 
 		},
         'AMAZON.CancelIntent' : function () { 
-			console.log("Called - AMAZON.CancelIntent"); 
+			logger.increment("AMAZON.CancelIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.CancelIntent");
+
 			controller.stop.call(this) 
 		},
         'AMAZON.ResumeIntent' : function () { 
-			console.log("Called - AMAZON.ResumeIntent"); 
+			logger.increment("AMAZON.ResumeIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.ResumeIntent");
+
 			controller.play.call(this) 
 		},
         'AMAZON.LoopOnIntent' : function () { 
-			console.log("Called - AMAZON.LoopOnIntent"); 
+			logger.increment("AMAZON.LoopOnIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.LoopOnIntent");
+
 			controller.loopOn.call(this) 
 		},
         'AMAZON.LoopOffIntent' : function () { 
-			console.log("Called - AMAZON.LoopOffIntent"); 
+			logger.increment("AMAZON.LoopOffIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.LoopOffIntent");
+
 			controller.loopOff.call(this) 
 		},
         'AMAZON.ShuffleOnIntent' : function () { 
-			console.log("Called - AMAZON.ShuffleOnIntent"); 
+			logger.increment("AMAZON.ShuffleOnIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.ShuffleOnIntent");
+
 			controller.shuffleOn.call(this) 
 		},
         'AMAZON.ShuffleOffIntent' : function () { 
-			console.log("Called - AMAZON.ShuffleOffIntent"); 
+			logger.increment("AMAZON.ShuffleOffIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.ShuffleOffIntent");
+
 			controller.shuffleOff.call(this) 
 		},
 		'AMAZON.StartOverIntent' : function () { 
-			console.log("Called - AMAZON.StartOverIntent"); 
-			controller.restart.call(this) 
+			logger.increment("AMAZON.StartOverIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.StartOverIntent");
+
+			controller.restart.call(this)
 		}
 	})
 
