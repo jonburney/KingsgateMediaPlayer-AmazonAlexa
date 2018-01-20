@@ -3,11 +3,10 @@
 // By sentientwaffle
 //
 // Modified to add better metrics and logging
-
-var request    = require('request')
-  , sax        = require('sax')
-  , _          = require('underscore');
-
+var request    = require('request');
+var sax        = require('sax');
+var _          = require('underscore');
+var logger     = require('./logger');
 
 // Public: Fetch the articles from the RSS or ATOM feed.
 // 
@@ -65,13 +64,22 @@ FeedRead.identify = function(xml) {
 // callback - Receives `(err, articles)`.
 // 
 FeedRead.get = function(feed_url, callback) {
+
+  var startTime = Date.now();
+
   request(feed_url, {timeout: 5000}, function(err, res, body) {
+
+    var elapsedTime = Date.now() - startTime;
+    logger.timer('FeedFetchTime', elapsedTime);
+
     if (err) return callback(err);
     var type = FeedRead.identify(body);
+
+    var processingStartTime = Date.now();
     if (type == "atom") {
-      FeedRead.atom(body, feed_url, callback);
+      FeedRead.atom(body, feed_url, callback, processingStartTime);
     } else if (type == "rss") {
-      FeedRead.rss(body, feed_url, callback);
+      FeedRead.rss(body, feed_url, callback, processingStartTime);
     } else {
       return callback(new Error("Body is not RSS or ATOM", "<"+ feed_url +">", res.statusCode));
     }
@@ -87,7 +95,7 @@ FeedRead.get = function(feed_url, callback) {
 // callback - Receives `(err, articles)`.
 // 
 // Returns an Array of Articles.
-FeedRead.atom = function(xml, source, callback) {
+FeedRead.atom = function(xml, source, callback, processingStartTime) {
   if (!callback) return FeedRead.atom(xml, "", source);
   
   var parser   = new FeedParser()
@@ -136,7 +144,8 @@ FeedRead.atom = function(xml, source, callback) {
         if (obj.published) obj.published = new Date(obj.published);
         return obj;
       }
-    ), function(art) { return !!art; }));
+    ), function(art) { return !!art; }),
+    processingStartTime);
   };
   
   parser.write(xml);
@@ -150,7 +159,7 @@ FeedRead.atom = function(xml, source, callback) {
 // callback - Receives `(err, articles)`.
 // 
 // Returns an Array of Articles.
-FeedRead.rss = function(xml, source, callback) {
+FeedRead.rss = function(xml, source, callback, processingStartTime) {
   if (!callback) return FeedRead.rss(xml, "", source);
   
   var parser   = new FeedParser()
@@ -198,7 +207,8 @@ FeedRead.rss = function(xml, source, callback) {
         if (obj.published) obj.published = new Date(obj.published);
         return obj;
       }
-    ), function(art) { return !!art; }));
+    ), function(art) { return !!art; }), 
+    processingStartTime);
   };
   
   parser.write(xml);
