@@ -134,7 +134,7 @@ var stateHandlers = {
 			logger.increment("AMAZON.PauseIntent + (" + constants.states.PLAY_MODE + ")");
 			logger.increment("AMAZON.PauseIntent");
 
-			controller.stop.call(this) 
+			controller.pause.call(this) 
 		},
         'AMAZON.StopIntent' : function () { 
 			logger.increment("AMAZON.StopIntent + (" + constants.states.PLAY_MODE + ")");
@@ -152,7 +152,7 @@ var stateHandlers = {
 			logger.increment("AMAZON.ResumeIntent + (" + constants.states.PLAY_MODE + ")");
 			logger.increment("AMAZON.ResumeIntent");
 
-			controller.play.call(this) 
+			controller.resume.call(this) 
 		},
         'AMAZON.LoopOnIntent' : function () { 
 			logger.increment("AMAZON.LoopOnIntent + (" + constants.states.PLAY_MODE + ")");

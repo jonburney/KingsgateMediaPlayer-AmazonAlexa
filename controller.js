@@ -53,8 +53,6 @@ var controller = function() {
 					self.attributes['index'] = (articles.length - 1);
 				}
 
-				
-
 				var lastArticle = articles[self.attributes['index']];
 
 				console.log("Loading podcast entry: " + self.attributes['index']);
@@ -86,6 +84,26 @@ var controller = function() {
             });   			
 		},
 		
+		pause: function() {
+			console.log("====== Pausing Playback ======");
+			console.log("Pausing offset at: " + this.attributes['offsetInMilliseconds']);
+
+			this.response.audioPlayerStop();
+			this.emit(':responseReady');
+		},
+
+		resume: function() {
+			var playBehavior = 'REPLACE_ALL';
+			var token = this.attributes["audioStream"].title;
+			var offsetInMilliseconds = this.attributes['offsetInMilliseconds'];
+		
+			console.log("====== Resuming Playback ======");
+			console.log("Resuming at offset: " + offsetInMilliseconds);
+			var cardTitle = 'Resuming ' + this.attributes["audioStream"].title;
+			this.response.speak(cardTitle).audioPlayerPlay(playBehavior, this.attributes["audioStream"].url, token, null, offsetInMilliseconds);
+			this.emit(':responseReady'); 
+		},
+
 		stop: function() {
 			this.response.audioPlayerStop();
 			this.emit(':responseReady');
