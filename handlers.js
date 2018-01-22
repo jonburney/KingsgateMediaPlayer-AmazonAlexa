@@ -30,8 +30,10 @@ var stateHandlers = {
 		'Unhandled': function() {
 			logger.increment("Unhandled (" + constants.states.START_MODE + ")");
 			logger.increment("Unhandled");
-
+			
 			console.log("Unable to map to intent via startModeIntentHandlers. Handler state = " + this.handler.state);
+			console.log(this.event.request);
+
 			var message = "Sorry, I didn't understand your request. Please say, play the latest sermon to listen to the latest sermon.";
 			this.response.speak(message).listen(message);
 			this.emit(":responseReady");
@@ -73,6 +75,7 @@ var stateHandlers = {
 			logger.increment("Unhandled");
 
 			console.log("Unable to map to intent via playModeIntentHandlers. Handler state = " + this.handler.state);
+			console.log(this.event.request);
 			
 			var message = "Sorry, I didn't understand your request. Please say, play the latest sermon to listen to the latest sermon.";
 			this.response.speak(message).listen(message);
