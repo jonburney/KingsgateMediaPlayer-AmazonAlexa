@@ -19,3 +19,29 @@
 'use strict';
 
 var assert = require('assert');
+var sinon = require('sinon');
+var controller = require("../controller");
+
+
+
+describe("controller", function() {
+    before(function(){
+        this.attributes = [];
+        
+    });
+
+    describe("pause", function() {
+        it('Pause calls audioPlayerStop', function() {
+            let response = {
+                audioPlayerStop: sinon.stub()
+            }
+
+            let attributes = {
+                offsetInMilliseconds: sinon.stub()
+            }
+            
+            //sinon.stub(this.response, 'audioPlayerStop');
+            //controller.pause(this);
+        });
+    });
+});

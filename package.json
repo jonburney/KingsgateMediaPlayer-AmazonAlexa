@@ -30,12 +30,16 @@
 		"dateformat": "^3.0.2",
 		"request": "2.x.x",
 		"sax": "1.x.x",
+		"sinon": "^4.2.0",
 		"underscore": "1.x.x"
 	},
 	"devDependencies": {
-		"should": "0.x.x",
-		"mocha": "0.x.x",
-		"connect": "1.x.x"
+		"connect": "3.6.5",
+		"mocha": "^2.5.3",
+		"should": "13.2.1",
+		"istanbul": "^0.4.4",
+		"codecov": "3.0.0",
+		"serve-static": "1.13.1"
 	},
 	"engines": {
 		"node": ">=4.3.0"

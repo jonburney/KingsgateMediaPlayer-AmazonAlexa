@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" 
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <title>KingsGate Community Church</title>
+        <description></description>
+        <link>https://kingsgateuk.com</link>
+        <generator>Insight by Endis</generator>
+        <language>en</language>
+        <itunes:category text="Religion &amp; Spirituality">
+            <itunes:category text="Christianity"></itunes:category>
+        </itunes:category>
+        <itunes:image href="https://kingsgateuk.com/Images/Content/2/750754.jpg"></itunes:image>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:owner>
+            <itunes:name>KingsGate Office</itunes:name>
+            <itunes:email>info@kingsgateuk.com</itunes:email>
+        </itunes:owner>
+        <item>
+            <title>Guest Speaker Stuart Bell</title>
+            <description>Sunday service from Peterborough Regional College</description>
+            <guid isPermaLink="false">m_73</guid>
+            <pubDate>Sun, 07 Dec 2003 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=73&amp;fullpage=True</link>
+            <itunes:summary>Sunday service from Peterborough Regional College</itunes:summary>
+            <itunes:author>Stuart Bell</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/72c8ec1a-1792-493d-9dd0-0e526d6b0839.mp3" type="audio/mpeg" length="11965695"></enclosure>
+        </item>
+        <item>
+            <title>Consistent Prayer</title>
+            <description>Sunday morning service</description>
+            <guid isPermaLink="false">m_75</guid>
+            <pubDate>Sun, 04 Jan 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=75&amp;fullpage=True</link>
+            <itunes:summary>Sunday morning service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/8f788859-0b40-4fc9-8d70-1ecbd88f2ff9.mp3" type="audio/mpeg" length="7648452"></enclosure>
+        </item>
+        <item>
+            <title>Goals 2004</title>
+            <description>Sunday morning service</description>
+            <guid isPermaLink="false">m_80</guid>
+            <pubDate>Sun, 11 Jan 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=80&amp;fullpage=True</link>
+            <itunes:summary>Sunday morning service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/4deeb947-fffe-4936-a6c1-de66e6562f7e.mp3" type="audio/mpeg" length="7546284"></enclosure>
+        </item>
+        <item>
+            <title>Spiritual Enlightenment</title>
+            <description>Sunday Morning Service</description>
+            <guid isPermaLink="false">m_97</guid>
+            <pubDate>Sun, 18 Jan 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=97&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:29:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/dbf0fc5c-e878-4138-b275-f9446aaab629.mp3" type="audio/mpeg" length="5291676"></enclosure>
+        </item>
+        <item>
+            <title>Heart Cry for Peterborough</title>
+            <description>Citywide prayer evening</description>
+            <guid isPermaLink="false">m_98</guid>
+            <pubDate>Fri, 16 Jan 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=98&amp;fullpage=True</link>
+            <itunes:summary>Citywide prayer evening</itunes:summary>
+            <itunes:author>Stuart Bell</itunes:author>
+            <itunes:duration>01:13:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/6f871409-4f3e-4869-9d61-c15927bf6177.mp3" type="audio/mpeg" length="13234212"></enclosure>
+        </item>
+        <item>
+            <title>Healing - making the connection</title>
+            <description>Sunday morning service</description>
+            <guid isPermaLink="false">m_101</guid>
+            <pubDate>Sun, 25 Jan 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=101&amp;fullpage=True</link>
+            <itunes:summary>Sunday morning service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:27:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/c8b6090c-2edc-4e0c-ba8b-38151f4c25be.mp3" type="audio/mpeg" length="4910220"></enclosure>
+        </item>
+        <item>
+            <title>Calling, Inheritance and Power</title>
+            <description>Sunday Morning Service</description>
+            <guid isPermaLink="false">m_107</guid>
+            <pubDate>Sun, 01 Feb 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=107&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:32:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/e6fc36ad-8a5e-44b4-8c09-7746add029ea.mp3" type="audio/mpeg" length="5931036"></enclosure>
+        </item>
+        <item>
+            <title>Commitment Sunday</title>
+            <description>Sunday Morning Service</description>
+            <guid isPermaLink="false">m_127</guid>
+            <pubDate>Sun, 08 Feb 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=127&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:46:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/e840788e-9b76-4a7d-9a11-187f3fce648c.mp3" type="audio/mpeg" length="8032932"></enclosure>
+        </item>
+        <item>
+            <title>How Great is the Power of God!</title>
+            <description>Sunday Morning Service</description>
+            <guid isPermaLink="false">m_130</guid>
+            <pubDate>Sun, 15 Feb 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=130&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:43:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/bc7c4a0d-6cd6-4aed-bc6d-326f0df403ab.mp3" type="audio/mpeg" length="7887564"></enclosure>
+        </item>
+        <item>
+            <title>Sin, Judgement and God's Wrath</title>
+            <description>Sunday Morning Message</description>
+            <guid isPermaLink="false">m_134</guid>
+            <pubDate>Sun, 22 Feb 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=134&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Message</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:35:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/890b9013-7732-4984-9c31-058416498b0c.mp3" type="audio/mpeg" length="6515964"></enclosure>
+        </item>
+        <item>
+            <title>Jesus the Healer</title>
+            <description>Sunday Morning Service</description>
+            <guid isPermaLink="false">m_167</guid>
+            <pubDate>Sun, 29 Feb 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=167&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:25:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/75b7c862-e8c4-45bc-9bd3-65f852b39b78.mp3" type="audio/mpeg" length="4256064"></enclosure>
+        </item>
+        <item>
+            <title>Honouring the Tithe</title>
+            <description>Sunday Morning Meeting</description>
+            <guid isPermaLink="false">m_204</guid>
+            <pubDate>Sun, 07 Mar 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=204&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Meeting</itunes:summary>
+            <itunes:author>Karen Smith</itunes:author>
+            <itunes:duration>00:45:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/6873d06c-7ddc-43d3-9f4c-37f515f109dc.mp3" type="audio/mpeg" length="7509024"></enclosure>
+        </item>
+        <item>
+            <title>Honouring the tithe - service 2</title>
+            <description>Sunday Morning Meeting</description>
+            <guid isPermaLink="false">m_205</guid>
+            <pubDate>Sun, 07 Mar 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=205&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Meeting</itunes:summary>
+            <itunes:author>Karen Smith</itunes:author>
+            <itunes:duration>00:35:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/d2eb1966-d392-4e34-858a-72f7fbe15b50.mp3" type="audio/mpeg" length="6489720"></enclosure>
+        </item>
+        <item>
+            <title>Guarding Your Well - Service 1</title>
+            <description>Sunday Morning Meeting</description>
+            <guid isPermaLink="false">m_219</guid>
+            <pubDate>Sun, 14 Mar 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=219&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Meeting</itunes:summary>
+            <itunes:author>Thomas Muthee</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/397a1c24-3b95-4205-bad1-226fe4c7bac8.mp3" type="audio/mpeg" length="6630120"></enclosure>
+        </item>
+        <item>
+            <title>Guarding Your Field - Service 2</title>
+            <description>Sunday Morning Meeting</description>
+            <guid isPermaLink="false">m_220</guid>
+            <pubDate>Sun, 14 Mar 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=220&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Meeting</itunes:summary>
+            <itunes:author>Thomas Muthee</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/1f36f6f7-c97a-4023-a7fa-95de59b57a72.mp3" type="audio/mpeg" length="7073460"></enclosure>
+        </item>
+        <item>
+            <title>Guard, Give and Gather</title>
+            <description>Sunday Morning Meeting</description>
+            <guid isPermaLink="false">m_242</guid>
+            <pubDate>Sun, 21 Mar 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=242&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Meeting</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:30:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/ffe5d7e8-acb7-4fc1-9066-4c274128777a.mp3" type="audio/mpeg" length="5434128"></enclosure>
+        </item>
+        <item>
+            <title>Outrageous Generosity</title>
+            <description>Sunday Morning Meeting</description>
+            <guid isPermaLink="false">m_322</guid>
+            <pubDate>Sun, 18 Apr 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=322&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Meeting</itunes:summary>
+            <itunes:author>Rachel Hickson</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/89ab7991-8233-4c00-a1e0-cf357bc7fa54.mp3" type="audio/mpeg" length="8574984"></enclosure>
+        </item>
+        <item>
+            <title>The Power behind the Passion 1</title>
+            <description>Sunday Morning Meeting</description>
+            <guid isPermaLink="false">m_342</guid>
+            <pubDate>Sun, 25 Apr 2004 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=342&amp;fullpage=True</link>
+            <itunes:summary>Sunday Morning Meeting</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/45a4ce86-6cb9-4ebd-ae1e-178828a581f6.mp3" type="audio/mpeg" length="7510104"></enclosure>
+        </item>
+        <item>
+            <title>Knock </title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_1808</guid>
+            <pubDate>Sun, 15 May 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=1808&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>01:00:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/3c68c3f4-10d8-4ec8-96bf-1ee4a822bda7.mp3" type="audio/mpeg" length="7350696"></enclosure>
+        </item>
+        <item>
+            <title>True Community</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_1833</guid>
+            <pubDate>Sun, 22 May 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=1833&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Mike Pawson</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/0e7cdaf3-9748-436a-8adf-bcd8197d6e5e.mp3" type="audio/mpeg" length="6816312"></enclosure>
+        </item>
+        <item>
+            <title>Jesus the Healer</title>
+            <description>Sunday Service </description>
+            <guid isPermaLink="false">m_1866</guid>
+            <pubDate>Sun, 22 May 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=1866&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service </itunes:summary>
+            <itunes:author>Jarrod Cooper</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/8c4ff0ba-14a4-407e-97c9-7d007d6bde37.mp3" type="audio/mpeg" length="7909056"></enclosure>
+        </item>
+        <item>
+            <title>The Lord is my Shepherd</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_1899</guid>
+            <pubDate>Sun, 29 May 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=1899&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Rachel Hickson</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/9b9c2523-c65e-4342-9fc8-3bf0346bc540.mp3" type="audio/mpeg" length="6802272"></enclosure>
+        </item>
+        <item>
+            <title>The Pleasure of Prayer</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_1948</guid>
+            <pubDate>Sun, 05 Jun 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=1948&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/41d52a73-c087-4e0e-86a1-a387a377fc70.mp3" type="audio/mpeg" length="7317751"></enclosure>
+        </item>
+        <item>
+            <title>Seek</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_1949</guid>
+            <pubDate>Sun, 08 May 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=1949&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/6e071941-48dd-44c9-8f08-77d6d6a4cb0e.mp3" type="audio/mpeg" length="7340328"></enclosure>
+        </item>
+        <item>
+            <title>Our Father in Heaven </title>
+            <description>How to Pray</description>
+            <guid isPermaLink="false">m_1985</guid>
+            <pubDate>Sun, 12 Jun 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=1985&amp;fullpage=True</link>
+            <itunes:summary>How to Pray</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/b199dba5-2d0a-4ee8-bd29-2cad68299550.mp3" type="audio/mpeg" length="6819768"></enclosure>
+        </item>
+        <item>
+            <title>Breakthrough &amp; Pressure</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_2028</guid>
+            <pubDate>Sun, 19 Jun 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2028&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Jeff Lucas</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/c442ea4b-cdeb-48d7-9831-fd157b6df110.mp3" type="audio/mpeg" length="7154892"></enclosure>
+        </item>
+        <item>
+            <title>Hallowed be Your name</title>
+            <description>How to Pray</description>
+            <guid isPermaLink="false">m_2091</guid>
+            <pubDate>Sun, 26 Jun 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2091&amp;fullpage=True</link>
+            <itunes:summary>How to Pray</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:50:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/44e55b86-f899-424c-bcc4-7c88c7d4d69e.mp3" type="audio/mpeg" length="8491716"></enclosure>
+        </item>
+        <item>
+            <title>Your Kingdom Come </title>
+            <description>How to Pray</description>
+            <guid isPermaLink="false">m_2126</guid>
+            <pubDate>Sun, 03 Jul 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2126&amp;fullpage=True</link>
+            <itunes:summary>How to Pray</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:35:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/d5f6aa87-4d2e-49c6-ab7c-20f0518a1f4b.mp3" type="audio/mpeg" length="5946264"></enclosure>
+        </item>
+        <item>
+            <title>Give us today our daily bread</title>
+            <description>How to Pray</description>
+            <guid isPermaLink="false">m_2176</guid>
+            <pubDate>Sun, 10 Jul 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2176&amp;fullpage=True</link>
+            <itunes:summary>How to Pray</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/1a37bcca-6547-4e26-97f8-2f91099c465d.mp3" type="audio/mpeg" length="6784128"></enclosure>
+        </item>
+        <item>
+            <title>Forgive us as we forgive </title>
+            <description>How to Pray </description>
+            <guid isPermaLink="false">m_2220</guid>
+            <pubDate>Sun, 17 Jul 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2220&amp;fullpage=True</link>
+            <itunes:summary>How to Pray </itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/442bd164-6799-42f9-a6c4-7681d88d67fb.mp3" type="audio/mpeg" length="5214780"></enclosure>
+        </item>
+        <item>
+            <title>Lead us not into temptation</title>
+            <description>How to Pray</description>
+            <guid isPermaLink="false">m_2240</guid>
+            <pubDate>Sun, 24 Jul 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2240&amp;fullpage=True</link>
+            <itunes:summary>How to Pray</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/2d93291e-9471-42c9-91ff-e46f457eaa7b.mp3" type="audio/mpeg" length="7125948"></enclosure>
+        </item>
+        <item>
+            <title>For Yours is the Kingdom</title>
+            <description>How to Pray</description>
+            <guid isPermaLink="false">m_2241</guid>
+            <pubDate>Sun, 24 Jul 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2241&amp;fullpage=True</link>
+            <itunes:summary>How to Pray</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/8628f9fa-d993-47b8-add9-20fbebaf31ce.mp3" type="audio/mpeg" length="5706072"></enclosure>
+        </item>
+        <item>
+            <title>The Embarrassment of Inadequacy </title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_2275</guid>
+            <pubDate>Sun, 31 Jul 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2275&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Terry Virgo</itunes:author>
+            <itunes:duration>00:45:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/37ec3980-ea6f-4676-9beb-c37da0c570d1.mp3" type="audio/mpeg" length="7961760"></enclosure>
+        </item>
+        <item>
+            <title>It Doesn't Pay to Run Away</title>
+            <description>Jonah Series</description>
+            <guid isPermaLink="false">m_2302</guid>
+            <pubDate>Sun, 07 Aug 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2302&amp;fullpage=True</link>
+            <itunes:summary>Jonah Series</itunes:summary>
+            <itunes:author>Tony Goddard</itunes:author>
+            <itunes:duration>00:35:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/6916bd62-fb54-4688-88c2-a70a84987b4b.mp3" type="audio/mpeg" length="6617592"></enclosure>
+        </item>
+        <item>
+            <title>From the Belly to the Beach</title>
+            <description>Jonah Series</description>
+            <guid isPermaLink="false">m_2340</guid>
+            <pubDate>Sun, 14 Aug 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2340&amp;fullpage=True</link>
+            <itunes:summary>Jonah Series</itunes:summary>
+            <itunes:author>Al Gray</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/1bc177f2-f399-476a-9858-00831ca1b5c7.mp3" type="audio/mpeg" length="6356772"></enclosure>
+        </item>
+        <item>
+            <title>God + Man = Impact</title>
+            <description>Jonah Series</description>
+            <guid isPermaLink="false">m_2366</guid>
+            <pubDate>Sun, 21 Aug 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2366&amp;fullpage=True</link>
+            <itunes:summary>Jonah Series</itunes:summary>
+            <itunes:author>Simon Deeks</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/35927255-1e38-450c-9b29-2754d93c0aa0.mp3" type="audio/mpeg" length="6838344"></enclosure>
+        </item>
+        <item>
+            <title>Our City Rocks 1</title>
+            <description>Jonah Series</description>
+            <guid isPermaLink="false">m_2510</guid>
+            <pubDate>Sun, 28 Aug 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2510&amp;fullpage=True</link>
+            <itunes:summary>Jonah Series</itunes:summary>
+            <itunes:author>Janie Bingham</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/2309b1f6-0f74-4240-9671-942891c93a9a.mp3" type="audio/mpeg" length="6078240"></enclosure>
+        </item>
+        <item>
+            <title>It's Time for Rain</title>
+            <description>Sunday Service - Guest Speaker</description>
+            <guid isPermaLink="false">m_2433</guid>
+            <pubDate>Sun, 04 Sep 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2433&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service - Guest Speaker</itunes:summary>
+            <itunes:author>Duane White</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/ed40c29f-d4da-4e60-9527-ced2d49dd11d.mp3" type="audio/mpeg" length="6917832"></enclosure>
+        </item>
+        <item>
+            <title>The Favour of God</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_2511</guid>
+            <pubDate>Sun, 11 Sep 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2511&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/edf39481-9568-4950-99a8-5951939eac96.mp3" type="audio/mpeg" length="8448300"></enclosure>
+        </item>
+        <item>
+            <title>What can happen in 40 Days?</title>
+            <description>Purpose Driven Life - Introduction</description>
+            <guid isPermaLink="false">m_2535</guid>
+            <pubDate>Sun, 18 Sep 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2535&amp;fullpage=True</link>
+            <itunes:summary>Purpose Driven Life - Introduction</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/01d59d0f-c8a2-4fca-9c95-9defd9141074.mp3" type="audio/mpeg" length="7753752"></enclosure>
+        </item>
+        <item>
+            <title>What on earth am I here for?</title>
+            <description>Purpose Driven Life - Part 1</description>
+            <guid isPermaLink="false">m_2587</guid>
+            <pubDate>Sun, 25 Sep 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2587&amp;fullpage=True</link>
+            <itunes:summary>Purpose Driven Life - Part 1</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:35:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/ced13321-0254-445a-b453-423d7db7b54b.mp3" type="audio/mpeg" length="7042356"></enclosure>
+        </item>
+        <item>
+            <title>Planned for God's Pleasure</title>
+            <description>Purpose Driven Life - Part 2</description>
+            <guid isPermaLink="false">m_2671</guid>
+            <pubDate>Sun, 02 Oct 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2671&amp;fullpage=True</link>
+            <itunes:summary>Purpose Driven Life - Part 2</itunes:summary>
+            <itunes:author>Karen Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/949f7857-70d7-471d-9ab8-46089fc9e073.mp3" type="audio/mpeg" length="6149520"></enclosure>
+        </item>
+        <item>
+            <title>Formed for God's Family</title>
+            <description>Purpose Driven Life - Part 3</description>
+            <guid isPermaLink="false">m_2743</guid>
+            <pubDate>Sun, 09 Oct 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2743&amp;fullpage=True</link>
+            <itunes:summary>Purpose Driven Life - Part 3</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/ce60b647-eeb7-44be-91c6-afd159b67109.mp3" type="audio/mpeg" length="8421948"></enclosure>
+        </item>
+        <item>
+            <title>Created to become like Christ</title>
+            <description>Purpose Driven Life - Part 4</description>
+            <guid isPermaLink="false">m_2803</guid>
+            <pubDate>Sun, 16 Oct 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2803&amp;fullpage=True</link>
+            <itunes:summary>Purpose Driven Life - Part 4</itunes:summary>
+            <itunes:author>Dave Smith </itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/55170c90-0b2b-4b27-9939-1c012a01a410.mp3" type="audio/mpeg" length="7226388"></enclosure>
+        </item>
+        <item>
+            <title>Shaped for Serving God</title>
+            <description>Purpose Driven Life - Part 5</description>
+            <guid isPermaLink="false">m_2882</guid>
+            <pubDate>Sun, 23 Oct 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2882&amp;fullpage=True</link>
+            <itunes:summary>Purpose Driven Life - Part 5</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/388e4553-d087-4c30-bfa5-eaa73b0a46cc.mp3" type="audio/mpeg" length="8523036"></enclosure>
+        </item>
+        <item>
+            <title>Made for a Mission</title>
+            <description>Purpose Driven Life - Part 6</description>
+            <guid isPermaLink="false">m_2940</guid>
+            <pubDate>Sun, 30 Oct 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2940&amp;fullpage=True</link>
+            <itunes:summary>Purpose Driven Life - Part 6</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/1dd267f3-3fc3-41c8-8b36-d3131d5df324.mp3" type="audio/mpeg" length="8007012"></enclosure>
+        </item>
+        <item>
+            <title>What We Have Learnt</title>
+            <description>Purpose Driven Life - Celebration</description>
+            <guid isPermaLink="false">m_2982</guid>
+            <pubDate>Sun, 06 Nov 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=2982&amp;fullpage=True</link>
+            <itunes:summary>Purpose Driven Life - Celebration</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/b0c8ba43-a47c-43e7-8958-776d6f594ec1.mp3" type="audio/mpeg" length="6303744"></enclosure>
+        </item>
+        <item>
+            <title>It All Starts With God</title>
+            <description>What on Earth am I Here For? - Part 1</description>
+            <guid isPermaLink="false">m_3065</guid>
+            <pubDate>Sun, 13 Nov 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3065&amp;fullpage=True</link>
+            <itunes:summary>What on Earth am I Here For? - Part 1</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/e8bc3f54-392e-434a-ae0d-95d1526bafdc.mp3" type="audio/mpeg" length="5315004"></enclosure>
+        </item>
+        <item>
+            <title>You are not an accident - but you are peculiar!</title>
+            <description>Sunday Service - Guest Speaker</description>
+            <guid isPermaLink="false">m_3182</guid>
+            <pubDate>Sun, 20 Nov 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3182&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service - Guest Speaker</itunes:summary>
+            <itunes:author>Rachel Hickson</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/fbeb473a-5654-420d-a1ca-e6b8bb8a0e5b.mp3" type="audio/mpeg" length="7882704"></enclosure>
+        </item>
+        <item>
+            <title>What gets you out of bed in the morning?</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3268</guid>
+            <pubDate>Sun, 27 Nov 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3268&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Ralph Turner</itunes:author>
+            <itunes:duration>00:50:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/0556fe93-9785-4500-924d-79b65a96516d.mp3" type="audio/mpeg" length="9028692"></enclosure>
+        </item>
+        <item>
+            <title>No Sell By Date</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3332</guid>
+            <pubDate>Sun, 04 Dec 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3332&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Rachel Hickson</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/7f4f2197-71f5-4fd1-bd1b-5e059b05cb45.mp3" type="audio/mpeg" length="8454780"></enclosure>
+        </item>
+        <item>
+            <title>A Life Assessment</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3362</guid>
+            <pubDate>Sun, 11 Dec 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3362&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:35:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/f3b81a39-587a-489c-9248-cfa28d37a349.mp3" type="audio/mpeg" length="6092388"></enclosure>
+        </item>
+        <item>
+            <title>The Miracle of Christmas</title>
+            <description>Christmas Celebration Service</description>
+            <guid isPermaLink="false">m_3432</guid>
+            <pubDate>Sun, 18 Dec 2005 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3432&amp;fullpage=True</link>
+            <itunes:summary>Christmas Celebration Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:25:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/23c8cd5e-abaf-4f83-8e16-a6cc4054332a.mp3" type="audio/mpeg" length="4545720"></enclosure>
+        </item>
+        <item>
+            <title>The Number One Goal</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3471</guid>
+            <pubDate>Sun, 01 Jan 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3471&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/6b151672-80b9-4350-9e20-58eab25abf27.mp3" type="audio/mpeg" length="7325964"></enclosure>
+        </item>
+        <item>
+            <title>Goals 2006</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3506</guid>
+            <pubDate>Sun, 08 Jan 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3506&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:50:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/088b7794-204e-4ab4-bb66-1cf06898f9d1.mp3" type="audio/mpeg" length="9500328"></enclosure>
+        </item>
+        <item>
+            <title>Breakout! </title>
+            <description>Corporate Prayer Meeting</description>
+            <guid isPermaLink="false">m_3559</guid>
+            <pubDate>Wed, 11 Jan 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3559&amp;fullpage=True</link>
+            <itunes:summary>Corporate Prayer Meeting</itunes:summary>
+            <itunes:author>Duane White</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/20088ca6-99d3-47ae-acc0-d751962f0721.mp3" type="audio/mpeg" length="9142092"></enclosure>
+        </item>
+        <item>
+            <title>Breakout of Joy</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3561</guid>
+            <pubDate>Sun, 15 Jan 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3561&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Rachel Hickson</itunes:author>
+            <itunes:duration>00:30:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/ffab56ba-8692-41f0-81d7-ca2fc384bc29.mp3" type="audio/mpeg" length="5517828"></enclosure>
+        </item>
+        <item>
+            <title>Holy Spirit Breakout</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3638</guid>
+            <pubDate>Sun, 22 Jan 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3638&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/1f710793-da09-47d1-bd04-265fe539ef12.mp3" type="audio/mpeg" length="8459748"></enclosure>
+        </item>
+        <item>
+            <title>P.C.C. Worship Values</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3698</guid>
+            <pubDate>Sun, 29 Jan 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3698&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Karen Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/16a2b6e2-07a6-48b6-a19e-f1e28e5901ae.mp3" type="audio/mpeg" length="7680636"></enclosure>
+        </item>
+        <item>
+            <title>Holy Spirit Breakout - Part 2</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3759</guid>
+            <pubDate>Sun, 05 Feb 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3759&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:45:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/4af3b2d8-e533-42a0-a60f-f4687e39ef73.mp3" type="audio/mpeg" length="8150220"></enclosure>
+        </item>
+        <item>
+            <title>Worship that Satisfies</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3814</guid>
+            <pubDate>Sun, 12 Feb 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3814&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/6be76133-ebbb-4e7a-89ee-0d875b5bfdb5.mp3" type="audio/mpeg" length="8348508"></enclosure>
+        </item>
+        <item>
+            <title>Time to Pray like we Sing</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3885</guid>
+            <pubDate>Sun, 19 Feb 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3885&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Rachel Hickson</itunes:author>
+            <itunes:duration>00:45:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/9f307457-1713-4620-b92f-e24f23abfcd1.mp3" type="audio/mpeg" length="7752348"></enclosure>
+        </item>
+        <item>
+            <title>Worship and the Tabernacle</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_3956</guid>
+            <pubDate>Sun, 26 Feb 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=3956&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Paul Reid</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/876a32d0-5ce0-4336-9017-0949b30cce24.mp3" type="audio/mpeg" length="6815448"></enclosure>
+        </item>
+        <item>
+            <title>Time to Give like we Sing</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_4027</guid>
+            <pubDate>Sun, 05 Mar 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=4027&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/c721b4cd-9f1e-4d7e-8ae0-c8a1d8b2df8d.mp3" type="audio/mpeg" length="6266808"></enclosure>
+        </item>
+        <item>
+            <title>Faith</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_4117</guid>
+            <pubDate>Sun, 12 Mar 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=4117&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/5176b8ee-fc87-40d8-a264-a80fe80e2970.mp3" type="audio/mpeg" length="8352180"></enclosure>
+        </item>
+        <item>
+            <title>The Blood</title>
+            <description>Sunday Service</description>
+            <guid isPermaLink="false">m_4222</guid>
+            <pubDate>Sun, 19 Mar 2006 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=4222&amp;fullpage=True</link>
+            <itunes:summary>Sunday Service</itunes:summary>
+            <itunes:author>Dave Smith </itunes:author>
+            <itunes:duration>00:40:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/73327de1-e39d-467c-829a-7e3fb2e97c3e.mp3" type="audio/mpeg" length="7007256"></enclosure>
+        </item>
+      
+        <item>
+            <title>Forgive One Another</title>
+            <description>We are Family - Part 3</description>
+            <guid isPermaLink="false">m_47807</guid>
+            <pubDate>Sun, 01 Aug 2010 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=47807&amp;fullpage=True</link>
+            <itunes:summary>We are Family - Part 3</itunes:summary>
+            <itunes:author>Paul Reid</itunes:author>
+            <itunes:duration>00:44:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/a691af7c-c527-4e11-949c-5f99fff2e5a0.mp3" type="audio/mpeg" length="31665675"></enclosure>
+        </item>
+        <item>
+            <title>Strengthening Your Serve</title>
+            <description>We are Family - Part 4</description>
+            <guid isPermaLink="false">m_47959</guid>
+            <pubDate>Sun, 08 Aug 2010 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=47959&amp;fullpage=True</link>
+            <itunes:summary>We are Family - Part 4</itunes:summary>
+            <itunes:author>Ralph Turner</itunes:author>
+            <itunes:duration>00:44:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/255eda41-8ff7-417c-b20f-44012351e6ac.mp3" type="audio/mpeg" length="30015260"></enclosure>
+        </item>
+        
+        <item>
+            <title>Now More Than Ever</title>
+            <description>2016 Vision</description>
+            <guid isPermaLink="false">m_161684</guid>
+            <pubDate>Sun, 24 Jan 2016 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=161684&amp;fullpage=True</link>
+            <itunes:summary>2016 Vision</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:45:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/6c50c396-1b8a-44cd-b303-10f6cedd4528.mp3" type="audio/mpeg" length="44478673"></enclosure>
+        </item>
+        
+        <item>
+            <title>God's Great Purpose</title>
+            <description>Living the Dream - Part 1</description>
+            <guid isPermaLink="false">m_193296</guid>
+            <pubDate>Sun, 01 Oct 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=193296&amp;fullpage=True</link>
+            <itunes:summary>Living the Dream - Part 1</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:38:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/a5cb3ed7-ef81-4e01-8fa8-7c90fdf007fa.mp3" type="audio/mpeg" length="37286210"></enclosure>
+        </item>
+        <item>
+            <title>Preparation for Purpose</title>
+            <description>Living the Dream - Part 2</description>
+            <guid isPermaLink="false">m_193782</guid>
+            <pubDate>Sun, 08 Oct 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=193782&amp;fullpage=True</link>
+            <itunes:summary>Living the Dream - Part 2</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:39:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/58f5f77b-d445-4364-b84a-6527d7be7308.mp3" type="audio/mpeg" length="38411305"></enclosure>
+        </item>
+        <item>
+            <title>Triumphing over Temptation </title>
+            <description>Living the Dream - Part 3</description>
+            <guid isPermaLink="false">m_194164</guid>
+            <pubDate>Sun, 15 Oct 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=194164&amp;fullpage=True</link>
+            <itunes:summary>Living the Dream - Part 3</itunes:summary>
+            <itunes:author>Andrew Ollerton</itunes:author>
+            <itunes:duration>00:37:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/f2c2602f-7f04-4bbd-b636-971a9857ea05.mp3" type="audio/mpeg" length="36879162"></enclosure>
+        </item>
+        <item>
+            <title>Make a Difference Now </title>
+            <description>Living the Dream - Part 4</description>
+            <guid isPermaLink="false">m_194513</guid>
+            <pubDate>Sun, 22 Oct 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=194513&amp;fullpage=True</link>
+            <itunes:summary>Living the Dream - Part 4</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:43:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/fb5401d9-a9a4-4bde-8392-f8906962f524.mp3" type="audio/mpeg" length="42804152"></enclosure>
+        </item>
+        <item>
+            <title>The Principle of First </title>
+            <description></description>
+            <guid isPermaLink="false">m_194831</guid>
+            <pubDate>Sun, 29 Oct 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=194831&amp;fullpage=True</link>
+            <itunes:summary></itunes:summary>
+            <itunes:author>Robert Morris</itunes:author>
+            <itunes:duration>00:42:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/1f00a0e3-de87-42de-9f20-0aa3d903616e.mp3" type="audio/mpeg" length="40987892"></enclosure>
+        </item>
+        <item>
+            <title>Prophetic Promotion</title>
+            <description>Living the Dream - Part 5</description>
+            <guid isPermaLink="false">m_195167</guid>
+            <pubDate>Sun, 05 Nov 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=195167&amp;fullpage=True</link>
+            <itunes:summary>Living the Dream - Part 5</itunes:summary>
+            <itunes:author>Jeff Lucas </itunes:author>
+            <itunes:duration>00:42:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/bcfabc95-6996-4c3d-a7c4-8c5c727b543a.mp3" type="audio/mpeg" length="41730160"></enclosure>
+        </item>
+        <item>
+            <title>Blessed to be a blessing</title>
+            <description>Living the Dream - Part 6</description>
+            <guid isPermaLink="false">m_195559</guid>
+            <pubDate>Sun, 12 Nov 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=195559&amp;fullpage=True</link>
+            <itunes:summary>Living the Dream - Part 6</itunes:summary>
+            <itunes:author>Simon Deeks</itunes:author>
+            <itunes:duration>00:38:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/81956560-553e-45c8-9f55-fa9f9eea037a.mp3" type="audio/mpeg" length="37430934"></enclosure>
+        </item>
+        <item>
+            <title>Restoring Relationships</title>
+            <description>Living the Dream - Part 7</description>
+            <guid isPermaLink="false">m_195886</guid>
+            <pubDate>Sun, 19 Nov 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=195886&amp;fullpage=True</link>
+            <itunes:summary>Living the Dream - Part 7</itunes:summary>
+            <itunes:author>David Robertson</itunes:author>
+            <itunes:duration>00:41:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/2890224f-0c21-4bfe-8276-237ab037db04.mp3" type="audio/mpeg" length="40658067"></enclosure>
+        </item>
+        <item>
+            <title>Bless Others</title>
+            <description>Living the Dream - Part 8</description>
+            <guid isPermaLink="false">m_196237</guid>
+            <pubDate>Sun, 26 Nov 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=196237&amp;fullpage=True</link>
+            <itunes:summary>Living the Dream - Part 8</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:44:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/5eab69ab-3cec-44f0-880d-bcbafaf39a52.mp3" type="audio/mpeg" length="43641605"></enclosure>
+        </item>
+        <item>
+            <title>Finishing Well</title>
+            <description>Living the Dream - Part 9</description>
+            <guid isPermaLink="false">m_196572</guid>
+            <pubDate>Sun, 03 Dec 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=196572&amp;fullpage=True</link>
+            <itunes:summary>Living the Dream - Part 9</itunes:summary>
+            <itunes:author>Andrew Ollerton</itunes:author>
+            <itunes:duration>00:36:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/d3fa3856-2cbd-40d0-bb57-9c659edbc404.mp3" type="audio/mpeg" length="35313247"></enclosure>
+        </item>
+        <item>
+            <title>The Perfect Gift</title>
+            <description>Christmas Celebration Services 2017</description>
+            <guid isPermaLink="false">m_197174</guid>
+            <pubDate>Sun, 17 Dec 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=197174&amp;fullpage=True</link>
+            <itunes:summary>Christmas Celebration Services 2017</itunes:summary>
+            <itunes:author>Dave Smith</itunes:author>
+            <itunes:duration>00:23:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/d69702ca-37ce-464c-8deb-e8bc8b847e9b.mp3" type="audio/mpeg" length="22598991"></enclosure>
+        </item>
+        <item>
+            <title>2018 - Mundane &amp; Miraculous</title>
+            <description>2018 New Year Message </description>
+            <guid isPermaLink="false">m_197420</guid>
+            <pubDate>Sun, 31 Dec 2017 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=197420&amp;fullpage=True</link>
+            <itunes:summary>2018 New Year Message </itunes:summary>
+            <itunes:author>Rachel Hickson</itunes:author>
+            <itunes:duration>00:35:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/5a43307c-1e3e-4c70-b9d9-21ff517d55d0.mp3" type="audio/mpeg" length="41139891"></enclosure>
+        </item>
+        <item>
+            <title>Courage like Caleb</title>
+            <description>Courage - Part 1</description>
+            <guid isPermaLink="false">m_197827</guid>
+            <pubDate>Sun, 07 Jan 2018 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=197827&amp;fullpage=True</link>
+            <itunes:summary>Courage - Part 1</itunes:summary>
+            <itunes:author>Andrew Ollerton</itunes:author>
+            <itunes:duration>00:36:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/d17b3dde-da69-4c20-975c-901c29e2d547.mp3" type="audio/mpeg" length="35766035"></enclosure>
+        </item>
+        <item>
+            <title>Joshua - Take Down Fear </title>
+            <description>Courage - Part 2</description>
+            <guid isPermaLink="false">m_198231</guid>
+            <pubDate>Sun, 14 Jan 2018 12:00:00 GMT</pubDate>
+            <link>https://kingsgateuk.com/Media/Player.aspx?media_id=198231&amp;fullpage=True</link>
+            <itunes:summary>Courage - Part 2</itunes:summary>
+            <itunes:author>Joshua Gardiner</itunes:author>
+            <itunes:duration>00:31:00</itunes:duration>
+            <enclosure url="https://s3.amazonaws.com/media.pcc-uk.org/4e982d65-5bfb-4044-8077-cc200af91ea5.mp3" type="audio/mpeg" length="31170471"></enclosure>
+        </item>
+    </channel>
+</rss>
