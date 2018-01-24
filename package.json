@@ -35,7 +35,7 @@
 	},
 	"devDependencies": {
 		"connect": "1.x.x",
-		"mocha": "^0.14.1",
+		"mocha": "^2.5.3",
 		"should": "0.x.x",
 		"istanbul": "^0.4.4",
 		"codecov": "3.0.0"
