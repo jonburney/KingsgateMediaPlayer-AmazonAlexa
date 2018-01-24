@@ -34,11 +34,12 @@
 		"underscore": "1.x.x"
 	},
 	"devDependencies": {
-		"connect": "1.x.x",
+		"connect": "3.6.5",
 		"mocha": "^2.5.3",
-		"should": "0.x.x",
+		"should": "13.2.1",
 		"istanbul": "^0.4.4",
-		"codecov": "3.0.0"
+		"codecov": "3.0.0",
+		"serve-static": "1.13.1"
 	},
 	"engines": {
 		"node": ">=4.3.0"

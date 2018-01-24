@@ -131,6 +131,9 @@ FeedRead.atom = function(xml, source, callback, processingStartTime) {
         if (!art.children.length) return false;
         var author = child_by_name(art, "author");
         if (author) author = child_data(author, "name");
+
+        var link = child_by_name(art, "link");
+        if (link && link.attributes) link = link.attributes.href;
         
         var obj = {
             title:     child_data(art, "title")
@@ -138,9 +141,10 @@ FeedRead.atom = function(xml, source, callback, processingStartTime) {
           , published: child_data(art, "published")
                     || child_data(art, "updated")
           , author:    author || default_author
-          , link:      child_by_name(art, "link").attributes.href
+          , link:      link
           , feed:      meta
           };
+
         if (obj.published) obj.published = new Date(obj.published);
         return obj;
       }
@@ -188,6 +192,19 @@ FeedRead.rss = function(xml, source, callback, processingStartTime) {
     callback(null, _.filter(_.map(articles,
       function(art) {
         if (!art.children.length) return false;
+
+        var enclosure = child_by_name(art, "enclosure");
+        if (enclosure && enclosure.attributes) {
+          var enclosureData = {
+            "url": enclosure.attributes.url
+            , "type": enclosure.attributes.type
+            , "length": enclosure.attributes.length
+          }
+        } else {
+          var enclosureData = {};
+        }
+        
+
         var obj = {
             title:     child_data(art, "title")
           , content:   scrub_html(child_data(art, "content:encoded"))
@@ -198,11 +215,7 @@ FeedRead.rss = function(xml, source, callback, processingStartTime) {
                     || child_data(art, "itunes:author")
           , link:      child_data(art, "link")
           , feed:      meta
-          , enclosure: {
-              "url": child_by_name(art, "enclosure").attributes.url
-            , "type": child_by_name(art, "enclosure").attributes.type
-            , "length": child_by_name(art, "enclosure").attributes.length
-          }
+          , enclosure: enclosureData
           };
         if (obj.published) obj.published = new Date(obj.published);
         return obj;

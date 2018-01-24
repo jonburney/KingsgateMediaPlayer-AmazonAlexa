@@ -40,10 +40,8 @@ describe("controller", function() {
                 offsetInMilliseconds: sinon.stub()
             }
             
-            
             //sinon.stub(this.response, 'audioPlayerStop');
-            
-            controller.pause(this);
+            //controller.pause(this);
         });
     });
 });
