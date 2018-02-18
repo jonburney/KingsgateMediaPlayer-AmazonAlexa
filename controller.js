@@ -165,14 +165,8 @@ var controller = function() {
 			this.emit(':responseReady');
 		},
 		
-		loopOn: function() {
-			var message = 'Looping is not suported yet';
-			this.response.speak(message);
-			this.emit(':responseReady');
-		},
-		
-		loopOff: function() {
-			var message = 'Looping is not suported yet';
+		noSupportedYet: function() {
+			var message = 'That feature is not available yet.';
 			this.response.speak(message);
 			this.emit(':responseReady');
 		},

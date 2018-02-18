@@ -51,8 +51,8 @@ var stateHandlers = {
             this.attributes['playQueue'] = [];
             this.handler.state = constants.states.START_MODE;
 
-            var message = 'Welcome to the Kingsgate Community Church sermon player. You can say, play the latest sermon to listen to the latest sermon.';
-            var reprompt = 'You can say, play the latest sermon to listen to the latest sermon.';
+            var message = 'Welcome to the unofficial Kingsgate Community Church sermon player. You can say, play the latest sermon to listen to the latest sermon.';
+            var reprompt = 'I didn\'t catch that. You can say, play the latest sermon to listen to the latest sermon.';
 
             this.response.speak(message).listen(reprompt);
             this.emit(':responseReady');
@@ -80,6 +80,24 @@ var stateHandlers = {
 			var message = "Sorry, I didn't understand your request. Please say, play the latest sermon to listen to the latest sermon.";
 			this.response.speak(message).listen(message);
 			this.emit(":responseReady");
+		},
+		'LaunchRequest' : function () {
+			logger.increment("LaunchRequest (" + constants.states.PLAY_MODE + ")");
+			logger.increment("LaunchRequest");
+
+            this.attributes['index'] = 0;
+            this.attributes['offsetInMilliseconds'] = 0;
+            this.attributes['loop'] = true;
+            this.attributes['shuffle'] = false;
+            this.attributes['playbackIndexChanged'] = true;
+            this.attributes['playQueue'] = [];
+            this.handler.state = constants.states.PLAY_MODE;
+
+            var message = 'Welcome to the unofficial Kingsgate Community Church sermon player. You can say, play the latest sermon to listen to the latest sermon.';
+            var reprompt = 'I didn\'t catch that. You can say, play the latest sermon to listen to the latest sermon.';
+
+            this.response.speak(message).listen(reprompt);
+            this.emit(':responseReady');
 		},
 		'PlayLatestSermon' : function () {
 			logger.increment("PlayLatestSermon (" + constants.states.PLAY_MODE + ")");
@@ -158,13 +176,13 @@ var stateHandlers = {
 			logger.increment("AMAZON.LoopOnIntent + (" + constants.states.PLAY_MODE + ")");
 			logger.increment("AMAZON.LoopOnIntent");
 
-			controller.loopOn.call(this) 
+			controller.noSupportedYet.call(this) 
 		},
         'AMAZON.LoopOffIntent' : function () { 
 			logger.increment("AMAZON.LoopOffIntent + (" + constants.states.PLAY_MODE + ")");
 			logger.increment("AMAZON.LoopOffIntent");
 
-			controller.loopOff.call(this) 
+			controller.noSupportedYet.call(this) 
 		},
         'AMAZON.ShuffleOnIntent' : function () { 
 			logger.increment("AMAZON.ShuffleOnIntent + (" + constants.states.PLAY_MODE + ")");
@@ -183,6 +201,12 @@ var stateHandlers = {
 			logger.increment("AMAZON.StartOverIntent");
 
 			controller.restart.call(this)
+		},
+		'AMAZON.RepeatIntent' : function () { 
+			logger.increment("AMAZON.RepeatIntent + (" + constants.states.PLAY_MODE + ")");
+			logger.increment("AMAZON.RepeatIntent");
+
+			controller.noSupportedYet.call(this)
 		}
 	})
 
