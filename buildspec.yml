@@ -3,8 +3,20 @@ version: 0.2
 phases:
   install: 
     commands:
+      - echo ****************************
+      - echo * Running install commands *
+      - echo ****************************
       - printenv
       - npm install
   build:
     commands:
+      - echo ****************************
+      - echo *  Running build commands  *
+      - echo ****************************
       - npm run test
+  post_build:
+    commands:
+      - echo *******************************
+      - echo * Running post build commands *
+      - echo *******************************
+      - npm run build-aws-resource

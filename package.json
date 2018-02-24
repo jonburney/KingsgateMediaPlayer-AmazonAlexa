@@ -19,7 +19,8 @@
 	},
 	"main": "./index",
 	"scripts": {
-		"test": "mocha"
+		"test": "mocha",
+		"build-aws-resource": "pack-zip"
 	},
 	"repository": {
 		"type": "git",
@@ -34,12 +35,13 @@
 		"underscore": "1.x.x"
 	},
 	"devDependencies": {
-		"connect": "3.6.5",
-		"mocha": "^2.5.3",
-		"should": "13.2.1",
-		"istanbul": "^0.4.4",
 		"codecov": "3.0.0",
-		"serve-static": "1.13.1"
+		"connect": "3.6.5",
+		"istanbul": "^0.4.4",
+		"mocha": "^2.5.3",
+		"pack-zip": "^0.2.2",
+		"serve-static": "1.13.1",
+		"should": "13.2.1"
 	},
 	"engines": {
 		"node": ">=4.3.0"
