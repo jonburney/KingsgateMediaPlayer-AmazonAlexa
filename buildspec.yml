@@ -20,3 +20,6 @@ phases:
       - echo * Running post build commands *
       - echo *******************************
       - npm run build-aws-resource
+artifacts:
+  files:
+    - kingsgate-alexa-skill.zip
