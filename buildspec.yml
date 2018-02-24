@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  install: 
+    commands:
+      - printenv
+      - npm install
+  build:
+    commands:
+      - npm run test
